@@ -4,10 +4,10 @@ import styled from 'styled-components'
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
   return (
     <Wrap bgImage={backgroundImg}>
-        <ItemText>
-          <h1>{ title }</h1>
-          <p>{ description }</p>
-        </ItemText>
+          <ItemText>
+            <h1>{ title }</h1>
+            <p>{ description }</p>
+          </ItemText>
         <Buttons>
             <ButtonGroup>
                 <LeftButton>
@@ -18,7 +18,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         { rightBtnText }
                     </RightButton>
                 }
-            </ButtonGroup>
+            </ButtonGroup>            
             <DownArrow src="/Images/down-arrow.svg"/>
         </Buttons>
     </Wrap>
@@ -46,6 +46,8 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+  
+
 `
 
 const ButtonGroup = styled.div`
@@ -87,3 +89,4 @@ const DownArrow = styled.img`
 `
 
 const Buttons = styled.div``
+
