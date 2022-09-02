@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
+import { collection, addDoc } from "firebase/firestore"; 
 
-function Home() {
+function Home(docRef = await addDoc(collection(db, "users")) {
   return (
     <Container>
         <Section
